@@ -20,7 +20,7 @@ public class Bankamatik_Projesi {
     static float girisYapanKullanicinHesabindakiPara = 0;
 
     public static void main(String[] args) {
-        //			 KEY	   VALUE
+           //			      KEY	    VALUE
         musteriBilgileri.put(12345678, 1876);
         musteriBilgileri.put(22222222, 1234);
         musteriBilgileri.put(98765432, 1453);
@@ -45,7 +45,7 @@ public class Bankamatik_Projesi {
             /// 12345678
             /// musteriBilgileri.get(12345678)
             if(musteriBilgileri.get(musteriNo) == sifre) {
-                System.out.println("HOsGELDİNİZ");
+                System.out.println("HOSGELDİNİZ");
                 girisYapanKullanicinMusteriNumarasi = musteriNo;
                 girisYapanKullanicinHesabindakiPara = toplamParaMiktarlari.get(musteriNo);
                 menuGoster();
@@ -108,20 +108,20 @@ public class Bankamatik_Projesi {
     }
    /* 1. Adım : Bankamızdaki müşterilerin musteriNumarasi ve 4 haneli şifresini tutan bir HashMap oluşturalım.
             * 		     Ve şu müşterileri biz ekleyelim.
-     * 			Integer, Integer
+            * 			Integer, Integer
      *
              * 			Müşteri No  -- Şifre
-     * 			12345678	   1876
+             * 			12345678	   1876
              * 			22222222	   1234
              * 			98765432	   1453
              * 			55554444	   2020
              *
              * 2. Adım : Bankamızdaki müşterilerin hesaplarındaki para miktarini tutan bir tane HashMap oluşturalım.
             * 		     Ve şu miktarları müşteri numarasıyla birlikte ekleyelim
-     * 			Integer,Float
+             * 			Integer,Float
      *
              * 			Müşteri No  -- Para
-     * 			12345678	   120.0
+          * 			12345678	   120.0
              * 			22222222	   3000.0
              * 			98765432	   7000.0
              * 			55554444	   50.0
